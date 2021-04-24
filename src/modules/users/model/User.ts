@@ -1,7 +1,14 @@
-import { v4 as uuidV4 } from "uuid";
+import { EntityBase } from "./EntityBase";
 
-class User {
-  // Complete aqui
+class User extends EntityBase {  
+  constructor() {
+    super();    
+    this.admin = false;
+  }
+
+  name: string;
+  admin: boolean;
+  email: string; 
 }
 
 export { User };
